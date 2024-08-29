@@ -1,0 +1,59 @@
+body{
+    font-family: poppins;
+}
+nav ul li {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    gap: 37px;
+    color: #615f5a;
+    
+}
+*{
+    margin: 0px;
+}
+#nav{
+    display: flex;
+    background-color: #fff9ea;
+    justify-content: space-between;
+    height: 108px;
+    width:auto;
+   align-items: center;
+   padding-left: 130px;
+    padding-right: 130px;
+}
+button{
+    background-color: #ffcb45;
+    border-radius: 20px;
+    height: 38px;
+    width: 122px;
+    gap: 10px;
+    font-weight: bold;
+    border: none;
+}
+.button{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 10px;
+}
+
+
+/* HERO sectiona */
+
+.hero{
+    background-image: url('/Image/shapes.png');
+    height: 600px;
+    background-size: contain;
+    background-position: center;
+}
+
+#hero1 {
+    padding-left: 130px;
+    font-weight: 600px;
+}
