@@ -10,6 +10,7 @@ nav ul{
     display: flex;
     gap: 37px;
     color: #615f5a;
+    /* color: white; */
     
 }
 *{
@@ -18,12 +19,13 @@ nav ul{
 #nav{
     display: flex;
     background-color: #fff9ea;
+    /* background-color: gray; */
     justify-content: space-between;
     height: 108px;
     width:auto;
    align-items: center;
-   padding-left: 130px;
-    padding-right: 130px;
+   padding-left: 120px;
+    padding-right: 120px;
 }
 button{
     background-color: #ffcb45;
@@ -44,16 +46,245 @@ button{
 }
 
 
-/* HERO sectiona */
+/* sectiona 1 */
 
 .hero{
     background-image: url('/Image/shapes.png');
-    height: 600px;
-    background-size: contain;
-    background-position: center;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 120px;
+}
+.hero1{
+    display: flex;
+    height:100%;
+    align-items: center;
+    gap: 20px;
+    
+}
+.img5{
+    height: 520px;
+    width: 500px;
 }
 
-#hero1 {
-    padding-left: 130px;
-    font-weight: 600px;
+/* SECTION 2 */
+.content{
+   
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
 }
+
+.content-p{
+    color:#ffcb45;
+    font-weight:600
+}
+.content-img{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+/* SECTION3 */
+
+.section-p{
+    text-align:center;
+    margin-top: 50px;
+}
+.img2{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.menu-img{
+    display:flex;
+    justify-content: space-around;
+    /* margin:130px;
+    margin-top:25px;
+    margin-bottom: 40px; */
+    margin: 25px 130px 40px 130px;    
+}
+.img1{
+   background-color:#f1f1f1;
+  
+   height: 230px;
+   
+  
+}
+
+.more{
+   
+}
+
+/* Section4 */
+
+.img3{
+    height: 410px;
+    width: 440px;
+    margin: 50px 130px;
+    }
+.img-one{
+    position: relative;
+    top: -32px;
+    display:flex; 
+}
+
+.review{
+    background-color: rgb(244, 244, 238);
+    /* border: 1px solid grey; */
+    width: 420px;
+    height: 180px;
+    padding: 20px;
+
+
+}
+.review img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.review i{
+    color: #ffcb45;
+    
+}
+.review-flex{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+
+
+.review-star{
+    display: flex;
+}
+
+.review-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 50px;
+    right: 120px;
+}
+.section-four{
+    display: flex;
+    overflow-x: hidden;
+}
+
+/* section 5 */
+
+.background{
+
+    background-image: url('/image/background.png');
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    height: 300px;
+    width:1000px;
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    color: #f1f1f1;
+    position: relative;
+    margin: 0px 150px;
+    margin-bottom: 50px;
+  
+ 
+}
+
+.footer{
+    background-color: #fff9ea;
+    
+  
+   
+
+}
+
+.footer-1{
+    display: flex;
+    /* margin: 50px 100px; */
+    justify-content: space-around;
+    padding: 50px;
+
+   
+  
+}
+
+/* Media quarie */
+
+@media screen and (max-width: 768px){
+    #nav{
+        flex-direction: column;
+
+    }
+    .hero1{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .h1{
+        font-size: 30px !important ;
+    }
+    
+    .hero{
+        height: auto;
+        padding: 0px 20px;
+    }
+    .hero-p{
+        padding-top: 10px;
+    }
+    .content-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 40px;
+    }
+    /* section 3  */
+    .menu-img{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        width: 230px;
+        margin: 25px 30px 40px 30px;  
+        
+    }
+ 
+    .img2{
+        width: 230px;
+        /* box-shadow: none; */
+    }
+    .img1{
+        width: 230px;
+    }
+    /* Section 4 */
+    /* .review-flex{
+        flex-direction: column;
+    } */
+    .section-four{
+        flex-direction: column;
+       
+    }
+    .review-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+    }
+    .review-say{
+        margin-left: 250px;
+    }
+    .background{
+        width: 85%;
+        height: 250px;
+        margin: 50px 30px 30px 30px ;
+        /* margin: 0px; */
+    }
+    .join{
+        margin-top: 100px;
+    }
+
+    .footer-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
