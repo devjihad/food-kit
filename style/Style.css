@@ -49,7 +49,7 @@ button{
 /* sectiona 1 */
 
 .hero{
-    background-image: url('/Image/shapes.png');
+    background-image: url('./Image/shapes.png');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
